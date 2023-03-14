@@ -1,0 +1,150 @@
+/* intuitivnejsi box-sizing */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color:  #f5f5f5;
+}
+
+.kontejner {
+    display: flex;
+    width: 670px;
+    height: 440px;
+    box-shadow: 1px 1px 10px #959595;
+    margin: 150px auto;
+    border-radius: 10px;  
+}
+
+.polovina {
+    width: 335px;
+    height: 440px;
+    padding: 30px 30px;
+}
+
+.leva {
+    flex: 0 0 335px;
+    background-image: linear-gradient(#06d7c1, #50cc49);
+    border-radius: 10px 0 0 10px; 
+    color: white;
+    position: relative;
+}
+
+.prava {
+    flex: 0 0 335px;
+    position: relative;
+}
+
+.zrychli {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px 0 0 0;
+ 
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.prodlouzena {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.bota {
+    position: absolute;
+    right: 0;
+    top: 130px;
+}
+
+.dole {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin:0;
+    
+}
+
+.seda {
+    color: #959595;
+    margin: 10px 0 30px 0;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 30px 0 15px 0;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+.popis {
+    margin: 0;
+    padding: 0 0 30px 0;
+    border-bottom: 2px solid #06d7c1;
+}
+
+.seznam {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.kosik {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color: #f15f42;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30px;
+
+}
+
+.tricetosm {
+    border: 1px solid #f15f42;
+    border-radius: 50%;
+    color: #f15f42;
+    font-weight: 500;
+}
+
+.cislo {
+    padding: 5px; 
+}
