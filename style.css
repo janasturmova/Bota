@@ -121,8 +121,16 @@ h2 {
 
 .seznam {
     display: flex;
-    justify-content: space-between;
-    text-decoration: none;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.tricetosm {
+    border: 1px solid #f15f42;
+    border-radius: 50%;
+    color: #f15f42;
+    font-weight: 500;
+    
 }
 
 .kosik {
@@ -138,13 +146,11 @@ h2 {
 
 }
 
-.tricetosm {
-    border: 1px solid #f15f42;
-    border-radius: 50%;
-    color: #f15f42;
-    font-weight: 500;
+.seznam li {
+    padding: 4px;
 }
 
-.cislo {
-    padding: 5px; 
+.seznam {
+    padding: 0;
 }
+
